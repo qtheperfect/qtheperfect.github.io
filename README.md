@@ -1,6 +1,8 @@
 * Introductory and auxiliary webs for diverse technology purposes
 * Contact:
 
+curl 'https://fulgenssequar.github.io/README.md' | gpg --import
+
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF8FZe8BEADPH9UV3wABdlaknYkNWY+SqKfiFhF4h+tjYh3BKwTle3seS8OA
