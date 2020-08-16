@@ -9,6 +9,9 @@
 ``` bash
 wget -qO - https://fulgenssequar.github.io/gpg.md | gpg --import 
 ```
+
+*Or* 
+
 ```bash
 curl https://fulgenssequar.github.io/gpg.md | gpg --import
 ```
