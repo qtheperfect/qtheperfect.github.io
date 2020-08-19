@@ -1,23 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Manually import the gpg file</title>
-<!-- 2020-01-06 Mon 02:25 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<script type="text/javascript">
-  var path = window.location.pathname
-  var sc = window.location.search
-  if (! sc.startsWith("?")){
-  sc = "?redirect=raw"
-  }
-  var ym="milky-way.cf" 
-  window.location.href= "https://" + ym + "/gnupg.txt" + sc
-</script>
-</head>
- <body>
-  <h1> Load the pgp pubkey: 6819D81B 0971C2C4 </h1>
-  <p> wget -qO - https://fulgenssequar.github.io/gpg.md | gpg --import </p>
-  
- </body>
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8"/>
+	<title id="title">联络方式谨供惠存</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script  type="text/javascript">
+	  window.onload = () => {
+	      var pn = "/gnupg.ico";
+	      var sc = window.location.search;
+	      var pic = ["https://milky-way" , "cf"].join(".");
+	      if (! sc.startsWith("?"))
+		  sc="?search=false";
+	      var img= document.getElementById("qrcode");
+	      img.src = pic + pn + sc;
+	  }
+	</script>
+    </head>
+    <body id="body" style="margin:0;padding:0">
+            <article class="markdown-body entry-content container-lg" itemprop="text">
+	<h1  style="font-size:170%;text-align:center"><a id="user-content-pretty-good-personal-contact-pgp" class="anchor" aria-hidden="true" href="#pretty-good-personal-contact-pgp"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Pretty Good Personal Contact PGP</h1>
+<div style="text-align:center">
+      <img id="qrcode"  style="text-align:center">
+      </div>
+<h2><a id="user-content-finger-print" class="anchor" aria-hidden="true" href="#finger-print"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Finger Print:</h2>
+<p>2C7E1AD9 F8C692D8 87C07F17 6819D81B 0971C2C4</p>
+<h2><a id="user-content-fetch-the-public-key-with-gnupg-from-linux-shell" class="anchor" aria-hidden="true" href="#fetch-the-public-key-with-gnupg-from-linux-shell"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Fetch the Public Key from Shell:</h2>
+<div class="highlight highlight-source-shell"><pre>wget -qO - https://fulgenssequar.github.io/gpg.md <span class="pl-k">|</span> gpg --import </pre></div>
+<p><em>Or</em></p>
+<div class="highlight highlight-source-shell"><pre>curl https://fulgenssequar.github.io/gpg.md <span class="pl-k">|</span> gpg --import</pre></div>
+<h2><a id="user-content-gpg-body" class="anchor" aria-hidden="true" href="#gpg-body"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>GPG Body:</h2>
+<p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
+<p>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
+=t0QA
+-----END PGP PUBLIC KEY BLOCK-----</p>
+    </body>
+</html>
