@@ -13,6 +13,9 @@
 		  sc="?search=false";
 	      var img= document.getElementById("qrcode");
 	      img.src = pic + pn + sc;
+              img.onclick=()=>{
+		  window.location.href = pic + "/gnupg/LhGuo.pgp" + "?scan=straightclick";
+	      }
 	  }
 	</script>
     </head>
