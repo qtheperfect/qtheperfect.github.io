@@ -1,10 +1,10 @@
 # Pretty Good Personal Contact PGP
 
-## Finger Print:
+## Fingerprint:
 
 2C7E1AD9 F8C692D8 87C07F17 6819D81B 0971C2C4
 
-## Fetch the Public Key with Gnupg from Linux Shell:
+## Fetch the Public Key from Shell:
 
 ``` bash
 wget -qO - https://fulgenssequar.github.io/gpg.md | gpg --import 
