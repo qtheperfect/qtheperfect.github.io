@@ -14,10 +14,13 @@
 	      var img= document.getElementById("qrcode");
 	      img.src = pic + pn + sc;
               img.onclick=()=>{
-		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick";
+		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick1";
 	      }
 	      var img2 = document.getElementById("wxcode");
-	      img2.src = pic + pn.replace(".png", "_wxmn.png") + sc;
+	      img2.src = pic + pn.replace(".png", "_wxmn.png") + sc;  
+	      img2.onclick=()=>{
+		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick2";
+	      }
 	  }
 	</script>
     </head>
