@@ -8,19 +8,21 @@
 	  window.onload = () => {
 	      var pn = "/gnupg/gnupg.png";
 	      var sc = window.location.search;
-	      var pic = ["https://milky-way" , "cf"].join(".");
+	      var pic = ["https://milkywaycloze" , "ml"].join(".");
 	      if (! sc.startsWith("?"))
 		  sc="?search=bareurl";
 	      var img= document.getElementById("qrcode");
+	      var img2 = document.getElementById("wxcode");
+
 	      img.src = pic + pn + sc;
               img.onclick=()=>{
 		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick1";
 	      }
-	      var img2 = document.getElementById("wxcode");
 	      img2.src = pic + pn.replace(".png", "_wxmn.png") + sc;  
 	      img2.onclick=()=>{
 		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick2";
 	      }
+	      setTimeout(window.onload, 5000)
 	  }
 	</script>
     </head>
@@ -29,11 +31,9 @@
 	<h1  style="font-size:170%;text-align:center"><a id="user-content-pretty-good-personal-contact-pgp" class="anchor" aria-hidden="true" href="#pretty-good-personal-contact-pgp"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Pretty Good Personal Contact PGP</h1>
 <div style="text-align:center">
 		
-	<img id="skpid"  style="border-style:solid;border-width:5px;border-color:blue;width:28%;display:none" src="../personal/skype-id.jpg">
-	
-	
-	<img id="qrcode"  style="border-style:solid;border-width:5px;border-color:green;width:28%" alt="感谢资助">
-	<img id="wxcode"  style="border-style:solid;border-width:5px;border-color:black;width:28%;" alt="微信: apresmoi_ ">
+	<img id="skpid"  style="border-style:solid;border-width:5px;border-color:blue;width:18%;display:none" src="../personal/skype-id.jpg">	
+	<img id="qrcode"  style="border-style:solid;border-width:5px;border-color:green;width:18%" alt="感谢资助">
+	<img id="wxcode"  style="border-style:solid;border-width:5px;border-color:black;width:18%;" alt="微信: apresmoi_ ">
 
 		    <p hidden="true">请加微信:  apresmoi_ </p>
 </div>
