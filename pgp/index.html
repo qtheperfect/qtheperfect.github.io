@@ -6,19 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script  type="text/javascript">
 	  window.onload = () => {
+	      var dt = "?dt=" + new Date().toISOString()
 	      var pn = "/gnupg/gnupg.png";
 	      var sc = window.location.search;
 	      var pic = ["https://milkywaycloze" , "ml"].join(".");
 	      if (! sc.startsWith("?"))
 		  sc="?search=bareurl";
-	      var img= document.getElementById("qrcode");
-	      var img2 = document.getElementById("wxcode");
+	      var img= document.getElementById("wxcode");
+	      var img2 = document.getElementById("qrcode");
 
 	      img.src = pic + pn + sc;
               img.onclick=()=>{
 		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick1";
 	      }
-	      img2.src = pic + pn.replace(".png", "_wxmn.png") + sc;  
+	      img2.src = pic + pn.replace(".png", "_wxmn.png") + sc + dt;  
 	      img2.onclick=()=>{
 		  window.location.href = pic + pn.replace(/[a-zA-Z]+\.png$/, "LhGuo.pgp") + "?scan=straightclick2";
 	      }
