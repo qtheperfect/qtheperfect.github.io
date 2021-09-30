@@ -1,4 +1,4 @@
 * Introductory and auxiliary webs for diverse technology purposes
 * Contact Information:
 
-curl 'https://fulgenssequar.github.io/contact' | gpg --import
+curl 'https://qtheperfect.github.io/pgp?contact=ghpages' | gpg --import
